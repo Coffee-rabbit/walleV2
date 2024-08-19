@@ -13,7 +13,8 @@ buildscript {
     }
     dependencies {
         classpath 'com.android.tools.build:gradle:2.3.0'
-        classpath "com.github.Coffee-rabbit:walleV2:plugin:latest.integration"
+        classpath "com.github.Coffee-rabbit:walleV2:plugin:latest"
+        // classpath "com.github.Petterpx.walle:plugin:1.0.3"
     }
 }
 
