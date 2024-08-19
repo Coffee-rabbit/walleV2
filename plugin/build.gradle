@@ -2,6 +2,17 @@ apply plugin: 'groovy'
 apply from: rootProject.file("mt_maven.gradle")
 //apply from: rootProject.file('quality.gradle')
 
+gradlePlugin {
+    plugins {
+        //插件名,每一个插件都可以有
+        wallePlugin {
+            id = "walle"
+            implementationClass = "com.meituan.android.walle.GradlePlugin"
+        }
+    }
+}
+
+
 jar {
     manifest {
         attributes 'Walle-Version': VERSION_NAME
